@@ -2,16 +2,16 @@ bits 64
 
 extern __errno_location
 
-section .data 
+section .data
 
 section .bss
 
 section .text
-    global ft_write
+    global ft_read
 
-ft_write:
-    mov rax, 1
-    syscall 
+ft_read:
+    mov rax, 0
+    syscall
     cmp rax, 0
     jl error
     ret
@@ -23,5 +23,3 @@ error:
     mov [rax], rdi 
     mov rax, -1
     ret
-
-    

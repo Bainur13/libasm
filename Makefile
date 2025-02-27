@@ -1,13 +1,14 @@
 NAME = libasm.a
 SOURCES = \
-    ft_strlen.asm
+    ft_strlen.asm ft_strcpy.asm ft_strcmp.asm ft_write.asm ft_read.asm ft_strdup.asm \
+	ft_atoi_base.asm
 BSOURCES = 
 
 OBJECTS = $(SOURCES:.asm=.o)
 BOBJECTS = $(BSOURCES:.asm=.o)
 
 ASM = nasm
-FLAGS = -f elf64
+FLAGS = -f elf64 -g -F dwarf
 AR = ar
 ARFLAGS = rcs
 

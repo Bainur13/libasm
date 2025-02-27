@@ -55,12 +55,12 @@ end:
     pop rdi
     ret
 
-_start :
-    mov rdi, s1
-    mov rsi, s2
-    call ft_strcmp
-    mov rax, 60
-    mov rdi, 0
-    syscall
+; _start :
+;     mov rdi, s1
+;     mov rsi, s2
+;     call ft_strcmp
+;     mov rax, 60
+;     mov rdi, 0
+;     syscall
 
      

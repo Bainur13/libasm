@@ -28,8 +28,10 @@ loop :
     jmp loop
 
 end :
+    mov [rdi], al
     pop rsi
     pop rdi
+    mov rax, rdi
     ret
 
 ; print :
